@@ -1,0 +1,110 @@
+:root {
+    --bg: #f8fafc;
+    --card: #fff;
+    --accent: #b02e0c;
+    --muted: #6b7280;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+    margin: 0;
+    background: var(--bg);
+    color: #0f172a;
+}
+
+.container {
+    max-width: 980px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+    color: var(--accent);
+}
+
+p.lead {
+    margin: 8px 0 20px;
+    color: var(--muted);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 16px;
+}
+
+.card {
+    background: var(--card);
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.tag {
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.desc {
+    font-size: 0.9rem;
+    color: var(--muted);
+}
+
+.price {
+    font-weight: 700;
+}
+
+button {
+    margin-top: auto;
+    padding: 10px 12px;
+    border-radius: 10px;
+    border: 0;
+    background: var(--accent);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.hero {
+    background: linear-gradient(90deg, #fff 0%, #fffbf7 100%);
+    padding: 18px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+.hero p {
+    margin: 6px 0 0;
+    color: var(--muted);
+}
+
+@media (max-width: 420px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}
