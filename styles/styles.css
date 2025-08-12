@@ -39,7 +39,7 @@ p.lead {
     color: var(--muted);
 }
 
-.grid {
+#tarjetitas {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
     gap: 16px;
@@ -103,8 +103,3 @@ button:active {
     color: var(--muted);
 }
 
-@media (max-width: 420px) {
-    h1 {
-        font-size: 1.5rem;
-    }
-}
